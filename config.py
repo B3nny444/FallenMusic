@@ -5,8 +5,8 @@ from dotenv import load_dotenv
 load_dotenv()
 
 
-API_ID = int(getenv(27094161))
-API_HASH = getenv("39477b23f5e6abea95fe0f92b7f00de0")
+API_ID = int(getenv("API_ID", 27094161))
+API_HASH = getenv("API_HASH", "39477b23f5e6abea95fe0f92b7f00de0")
 
 BOT_TOKEN = getenv("BOT_TOKEN", "7008178074:AAHRxTvWF_HBlQ-FXzg5gnYhXzHpmLWEj5A")
 DURATION_LIMIT = int(getenv("DURATION_LIMIT", "90"))
@@ -18,8 +18,8 @@ START_IMG = getenv("START_IMG", "https://te.legra.ph/file/f8ba75bdbb9931cbc8229.
 
 SESSION = getenv("SESSION", None)
 
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/DevilsHeavenMF")
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/FallenAssociation")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+Sd4K6jFIF79iYWU1")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/+Sd4K6jFIF79iYWU1")
 
 SUDO_USERS = list(map(int, getenv("SUDO_USERS", "").split()))
 
